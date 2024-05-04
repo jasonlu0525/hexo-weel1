@@ -1,0 +1,35 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    &-header{
+        border-radius: 0.5rem;
+        overflow: hidden;
+        margin-bottom: 1rem;
+    }
+    &-body{
+        margin-bottom: 1.5rem;
+    }
+    &-title{
+        color: $primary-700;
+        margin-bottom: 0.5rem;
+    }
+    &-text{
+        color: $primary-500;
+
+        // 限制最多兩行
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    &-footer{
+        margin-top: auto;
+        & > ul{
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}
+

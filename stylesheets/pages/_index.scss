@@ -1,0 +1,11 @@
+.work{
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        padding: 1.5rem 0;
+    }
+    &-item{
+        width: calc(50% - 12px);
+    }
+}
